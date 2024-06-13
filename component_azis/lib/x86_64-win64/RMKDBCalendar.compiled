@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="D:\XDRIVE\LAZ-LEB\DEV\fpc\bin\x86_64-win64\fpc.exe" Date="1455521604"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -l -vewnhibq -FuD:\XDRIVE\LAZ-LEB\DEV\lazarus\packager\units\x86_64-win64 -FuD:\XDRIVE\LAZ-LEB\DEV\lazarus\components\lazutils\lib\x86_64-win64 -FuD:\XDRIVE\LAZ-LEB\DEV\lazarus\components\buildintf\units\x86_64-win64 -FuD:\XDRIVE\LAZ-LEB\DEV\lazarus\components\freetype\lib\x86_64-win64 -FuD:\XDRIVE\LAZ-LEB\DEV\lazarus\lcl\units\x86_64-win64 -FuD:\XDRIVE\LAZ-LEB\DEV\lazarus\lcl\units\x86_64-win64\win32 -FuD:\XDRIVE\LAZ-LEB\DEV\lazarus\components\lazcontrols\lib\x86_64-win64\win32 -FuD:\XDRIVE\LAZ-LEB\DEV\lazarus\components\ideintf\units\x86_64-win64\win32 -FuD:\XDRIVE\APP\LAZARUS\component_azis\ -FUD:\XDRIVE\APP\LAZARUS\component_azis\lib\x86_64-win64\ -dLCL -dLCLwin32 rmkdbcalendar.pas"/>
+</CONFIG>

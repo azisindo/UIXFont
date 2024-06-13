@@ -1,0 +1,70 @@
+object Form1: TForm1
+  Left = 256
+  Height = 372
+  Top = 145
+  Width = 600
+  Caption = 'Form1'
+  ClientHeight = 372
+  ClientWidth = 600
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 264
+    Top = 0
+    Width = 600
+    Align = alTop
+    Caption = 'Panel1'
+    ClientHeight = 264
+    ClientWidth = 600
+    TabOrder = 0
+    object TreeView1: TTreeView
+      Left = 1
+      Height = 262
+      Top = 1
+      Width = 598
+      Align = alClient
+      HideSelection = False
+      ReadOnly = True
+      TabOrder = 0
+      Options = [tvoAutoItemHeight, tvoKeepCollapsedNodes, tvoReadOnly, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 101
+    Top = 271
+    Width = 600
+    Align = alBottom
+    ClientHeight = 101
+    ClientWidth = 600
+    TabOrder = 1
+    object Button1: TButton
+      Left = 16
+      Height = 25
+      Top = 24
+      Width = 75
+      Caption = 'Up'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object Button2: TButton
+      Left = 104
+      Height = 25
+      Top = 24
+      Width = 75
+      Caption = 'Down'
+      OnClick = Button2Click
+      TabOrder = 1
+    end
+    object Button3: TButton
+      Left = 512
+      Height = 25
+      Top = 24
+      Width = 75
+      Caption = 'Close'
+      OnClick = Button3Click
+      TabOrder = 2
+    end
+  end
+end

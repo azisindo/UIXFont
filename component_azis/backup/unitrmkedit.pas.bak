@@ -1,0 +1,83 @@
+unit UnitRMKEdit;
+
+{$mode ObjFPC}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, StdCtrls;
+
+type
+
+  { TRMKEdit }
+
+  TRMKEdit = class(TEdit)
+  private
+    CorInicial: TColor;
+    FMudarColor: TColor;
+    FCampoObrigatorio: Boolean;
+    FMensagem: String;
+    procedure SetMudarCor(const Value: TColor);
+    procedure SetCampoObrigatorio(const Value: Boolean);
+    procedure SetMensagem(const Value: String);
+
+  protected
+    procedure DoEnter; override;
+    procedure DoExit; override;
+
+  public
+    constructor Create(AOwner: TComponent); override;
+
+  published
+    property MudarColor: TColor read FMudarColor write SetMudarCor;
+    property Mensagem : String read FMensagem write SetMensagem;
+    property CampoObrigatorio: Boolean read FCampoObrigatorio write SetCampoObrigatorio;
+
+  end;
+
+procedure Register;
+
+implementation
+
+procedure Register;
+begin
+  RegisterComponents('Standard',[TRMKEdit]);
+end;
+
+{ TRMKEdit }
+
+procedure TRMKEdit.SetMudarCor(const Value: TColor);
+begin
+
+end;
+
+procedure TRMKEdit.SetCampoObrigatorio(const Value: Boolean);
+begin
+
+end;
+
+procedure TRMKEdit.SetMensagem(const Value: String);
+begin
+
+end;
+
+procedure TRMKEdit.DoEnter;
+begin
+  inherited;
+  CorInicial := Color;
+  Color := FMudarColor;
+end;
+
+procedure TRMKEdit.DoExit;
+begin
+  inherited;
+  Color := CorInicial;
+end;
+
+constructor TRMKEdit.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+  FMudarColor    := $00D6F4FE;
+end;
+
+end.

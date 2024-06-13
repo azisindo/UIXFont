@@ -1,0 +1,84 @@
+unit DMKEdit;
+
+{$mode ObjFPC}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, StdCtrls;
+
+type
+
+  { TDMKEdit }
+
+  TDMKEdit = class(TEdit)
+  private
+    CorInicial: TColor;
+    FMudarColor: TColor;
+    FCampoObrigatorio: Boolean;
+    FMensagem: String;
+    procedure SetMudarCor(const Value: TColor);
+    procedure SetCampoObrigatorio(const Value: Boolean);
+    procedure SetMensagem(const Value: String);
+
+  protected
+    procedure DoEnter; override;
+    procedure DoExit; override;
+
+  public
+    constructor Create(AOwner: TComponent); override;
+
+  published
+    property MudarColor: TColor read FMudarColor write SetMudarCor;
+    property Mensagem : String read FMensagem write SetMensagem;
+    property CampoObrigatorio: Boolean read FCampoObrigatorio write SetCampoObrigatorio;
+
+  end;
+
+procedure Register;
+
+implementation
+
+procedure Register;
+begin
+  RegisterComponents('Standard',[TDMKEdit]);
+end;
+
+{ TDMKEdit }
+
+procedure TDMKEdit.SetMudarCor(const Value: TColor);
+begin
+  FMudarColor := Value;
+end;
+
+procedure TDMKEdit.SetCampoObrigatorio(const Value: Boolean);
+begin
+  FCampoObrigatorio := Value;
+end;
+
+procedure TDMKEdit.SetMensagem(const Value: String);
+begin
+  FMensagem := Value;
+end;
+
+procedure TDMKEdit.DoEnter;
+begin
+  inherited;
+  CorInicial := Color;
+  Color := FMudarColor;
+end;
+
+procedure TDMKEdit.DoExit;
+begin
+  inherited;
+  Color := CorInicial;
+end;
+
+constructor TDMKEdit.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+  FMudarColor    := $00D6F4FE;
+
+end;
+
+end.

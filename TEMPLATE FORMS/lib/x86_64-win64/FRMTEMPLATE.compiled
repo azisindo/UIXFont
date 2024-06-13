@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="D:\XDRIVE\LAZ-LEB\DEV\fpc\bin\x86_64-win64\fpc.exe" Date="1455521604"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -WG -l -vewnhibq &quot;-FiD:\XDRIVE\APP\LAZARUS\TEMPLATE FORMS\lib\x86_64-win64&quot; -FuD:\XDRIVE\APP\LAZARUS\component_azis\lib\x86_64-win64 -FuD:\XDRIVE\LAZ-LEB\DEV\lazarus\components\ideintf\units\x86_64-win64\win32 -FuD:\XDRIVE\LAZ-LEB\DEV\lazarus\components\lazcontrols\lib\x86_64-win64\win32 -FuD:\XDRIVE\LAZ-LEB\DEV\lazarus\lcl\units\x86_64-win64\win32 -FuD:\XDRIVE\LAZ-LEB\DEV\lazarus\lcl\units\x86_64-win64 -FuD:\XDRIVE\LAZ-LEB\DEV\lazarus\components\freetype\lib\x86_64-win64 -FuD:\XDRIVE\LAZ-LEB\DEV\lazarus\components\buildintf\units\x86_64-win64 -FuD:\XDRIVE\LAZ-LEB\DEV\lazarus\components\lazutils\lib\x86_64-win64 -FuD:\XDRIVE\LAZ-LEB\DEV\lazarus\packager\units\x86_64-win64 &quot;-FuD:\XDRIVE\APP\LAZARUS\TEMPLATE FORMS\&quot; &quot;-FUD:\XDRIVE\APP\LAZARUS\TEMPLATE FORMS\lib\x86_64-win64\&quot; &quot;-FED:\XDRIVE\APP\LAZARUS\TEMPLATE FORMS\&quot; &quot;-oD:\XDRIVE\APP\LAZARUS\TEMPLATE FORMS\FRMTEMPLATE.exe&quot; -dLCL -dLCLwin32 FRMTEMPLATE.lpr"/>
+</CONFIG>
