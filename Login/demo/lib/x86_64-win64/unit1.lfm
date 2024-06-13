@@ -1,0 +1,111 @@
+object Form1: TForm1
+  Left = 432
+  Height = 400
+  Top = 321
+  Width = 600
+  BorderStyle = bsDialog
+  Caption = 'Form1'
+  ClientHeight = 400
+  ClientWidth = 600
+  Color = clSkyBlue
+  Position = poDesktopCenter
+  LCLVersion = '1.6.4.0'
+  object lblLogin: TLabel
+    Left = 448
+    Height = 17
+    Top = 24
+    Width = 39
+    Caption = 'Login'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    OnClick = lblLoginClick
+  end
+  object lblInfo: TLabel
+    Left = 512
+    Height = 17
+    Top = 24
+    Width = 28
+    Caption = 'Info'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    OnClick = lblInfoClick
+  end
+  object pnlLogin: TPanel
+    Left = 128
+    Height = 200
+    Top = 104
+    Width = 336
+    BorderSpacing.InnerBorder = 5
+    BevelInner = bvRaised
+    BevelOuter = bvNone
+    BorderWidth = 5
+    BorderStyle = bsSingle
+    ClientHeight = 200
+    ClientWidth = 336
+    Color = clMoneyGreen
+    ParentColor = False
+    TabOrder = 0
+    Visible = False
+    object lbeName: TLabeledEdit
+      Left = 128
+      Height = 27
+      Top = 40
+      Width = 144
+      EditLabel.AnchorSideTop.Control = lbeName
+      EditLabel.AnchorSideTop.Side = asrCenter
+      EditLabel.AnchorSideRight.Control = lbeName
+      EditLabel.AnchorSideBottom.Control = lbeName
+      EditLabel.AnchorSideBottom.Side = asrBottom
+      EditLabel.Left = 45
+      EditLabel.Height = 17
+      EditLabel.Top = 45
+      EditLabel.Width = 80
+      EditLabel.Caption = 'Username   '
+      EditLabel.ParentColor = False
+      LabelPosition = lpLeft
+      TabOrder = 0
+    end
+    object lbePassword: TLabeledEdit
+      Left = 128
+      Height = 27
+      Top = 88
+      Width = 144
+      EchoMode = emPassword
+      EditLabel.AnchorSideTop.Control = lbePassword
+      EditLabel.AnchorSideTop.Side = asrCenter
+      EditLabel.AnchorSideRight.Control = lbePassword
+      EditLabel.AnchorSideBottom.Control = lbePassword
+      EditLabel.AnchorSideBottom.Side = asrBottom
+      EditLabel.Left = 48
+      EditLabel.Height = 17
+      EditLabel.Top = 93
+      EditLabel.Width = 77
+      EditLabel.Caption = 'Password   '
+      EditLabel.ParentColor = False
+      LabelPosition = lpLeft
+      PasswordChar = '*'
+      TabOrder = 1
+    end
+    object btnLogin: TButton
+      Left = 128
+      Height = 33
+      Top = 136
+      Width = 88
+      Caption = 'Login'
+      OnClick = btnLoginClick
+      TabOrder = 2
+    end
+  end
+  object lblInformation: TLabel
+    Left = 128
+    Height = 34
+    Top = 176
+    Width = 339
+    Alignment = taCenter
+    Caption = 'Please type the correct username and password.'#10'Hint: hello pascal'
+    ParentColor = False
+    Visible = False
+  end
+end
