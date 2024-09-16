@@ -9,12 +9,11 @@ object Form1: TForm1
   ClientWidth = 600
   Color = clSkyBlue
   Position = poDesktopCenter
-  LCLVersion = '1.6.4.0'
   object lblLogin: TLabel
     Left = 448
     Height = 17
     Top = 24
-    Width = 39
+    Width = 42
     Caption = 'Login'
     Font.Style = [fsBold]
     ParentColor = False
@@ -25,7 +24,7 @@ object Form1: TForm1
     Left = 512
     Height = 17
     Top = 24
-    Width = 28
+    Width = 29
     Caption = 'Info'
     Font.Style = [fsBold]
     ParentColor = False
@@ -42,49 +41,40 @@ object Form1: TForm1
     BevelOuter = bvNone
     BorderWidth = 5
     BorderStyle = bsSingle
-    ClientHeight = 200
-    ClientWidth = 336
+    ClientHeight = 198
+    ClientWidth = 334
     Color = clMoneyGreen
+    ParentBackground = False
     ParentColor = False
     TabOrder = 0
     Visible = False
     object lbeName: TLabeledEdit
       Left = 128
-      Height = 27
+      Height = 24
       Top = 40
       Width = 144
-      EditLabel.AnchorSideTop.Control = lbeName
-      EditLabel.AnchorSideTop.Side = asrCenter
-      EditLabel.AnchorSideRight.Control = lbeName
-      EditLabel.AnchorSideBottom.Control = lbeName
-      EditLabel.AnchorSideBottom.Side = asrBottom
-      EditLabel.Left = 45
       EditLabel.Height = 17
-      EditLabel.Top = 45
-      EditLabel.Width = 80
+      EditLabel.Width = 79
       EditLabel.Caption = 'Username   '
       EditLabel.ParentColor = False
+      Font.Name = 'SF UI Text'
       LabelPosition = lpLeft
+      ParentFont = False
       TabOrder = 0
     end
     object lbePassword: TLabeledEdit
       Left = 128
-      Height = 27
+      Height = 24
       Top = 88
       Width = 144
       EchoMode = emPassword
-      EditLabel.AnchorSideTop.Control = lbePassword
-      EditLabel.AnchorSideTop.Side = asrCenter
-      EditLabel.AnchorSideRight.Control = lbePassword
-      EditLabel.AnchorSideBottom.Control = lbePassword
-      EditLabel.AnchorSideBottom.Side = asrBottom
-      EditLabel.Left = 48
       EditLabel.Height = 17
-      EditLabel.Top = 93
-      EditLabel.Width = 77
+      EditLabel.Width = 73
       EditLabel.Caption = 'Password   '
       EditLabel.ParentColor = False
+      Font.Name = 'SF UI Text'
       LabelPosition = lpLeft
+      ParentFont = False
       PasswordChar = '*'
       TabOrder = 1
     end
@@ -94,18 +84,20 @@ object Form1: TForm1
       Top = 136
       Width = 88
       Caption = 'Login'
-      OnClick = btnLoginClick
       TabOrder = 2
+      OnClick = btnLoginClick
     end
   end
   object lblInformation: TLabel
     Left = 128
     Height = 34
     Top = 176
-    Width = 339
+    Width = 310
     Alignment = taCenter
     Caption = 'Please type the correct username and password.'#10'Hint: hello pascal'
+    Font.Name = 'SF UI Text'
     ParentColor = False
+    ParentFont = False
     Visible = False
   end
 end

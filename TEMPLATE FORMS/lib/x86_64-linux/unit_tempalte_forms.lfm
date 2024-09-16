@@ -1,0 +1,199 @@
+object Form1: TForm1
+  Left = 3130
+  Height = 761
+  Top = 37
+  Width = 1256
+  Caption = 'Form1'
+  ClientHeight = 761
+  ClientWidth = 1256
+  DesignTimePPI = 144
+  object Panel1: TPanel
+    Left = 148
+    Height = 761
+    Top = 0
+    Width = 196
+    Align = alLeft
+    Caption = 'White 1'
+    Color = 16513785
+    ParentColor = False
+    TabOrder = 0
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 761
+    Top = 0
+    Width = 148
+    Align = alLeft
+    Caption = 'White 2'
+    Color = 16316148
+    ParentColor = False
+    TabOrder = 1
+  end
+  object Panel3: TPanel
+    Left = 344
+    Height = 761
+    Top = 0
+    Width = 175
+    Align = alLeft
+    Caption = 'Grey 1'
+    Color = 8483683
+    ParentColor = False
+    TabOrder = 2
+  end
+  object Panel4: TPanel
+    Left = 519
+    Height = 761
+    Top = 0
+    Width = 138
+    Align = alLeft
+    Caption = 'Black 2'
+    Color = 5984069
+    ParentColor = False
+    TabOrder = 3
+  end
+  object Panel5: TPanel
+    Left = 657
+    Height = 761
+    Top = 0
+    Width = 167
+    Align = alLeft
+    Caption = 'Black 1'
+    Color = 3549217
+    ParentColor = False
+    TabOrder = 4
+  end
+  object RMKPanelStandard1: TRMKPanelStandard
+    Left = 868
+    Height = 51
+    Top = 540
+    Width = 288
+    BevelOuter = bvNone
+    Caption = 'Charge             Rp. 50.000'
+    Color = 14251062
+    Font.Color = 16513785
+    Font.Height = -24
+    Font.Name = 'SFUIDisplay-Regular'
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 5
+  end
+  object RMKPanelWarna1: TRMKPanelWarna
+    Left = 876
+    Height = 51
+    Top = 336
+    Width = 288
+    BevelOuter = bvNone
+    Caption = 'Save'
+    Color = 3979344
+    Font.Color = 16513785
+    Font.Height = -24
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 6
+    CorInicial = 3979344
+    CorMouseSob = 3979344
+  end
+  object RMKPanelStandard2: TRMKPanelStandard
+    Left = 868
+    Height = 51
+    Top = 480
+    Width = 287
+    BevelOuter = bvNone
+    Caption = 'CASH'
+    Color = 12172097
+    Font.Color = 16513785
+    Font.Height = -18
+    Font.Name = 'SFUIDisplay-Semibold'
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 7
+  end
+  object RMKPanelWarna2: TRMKPanelWarna
+    Left = 876
+    Height = 51
+    Top = 276
+    Width = 288
+    BevelOuter = bvNone
+    Caption = 'Login'
+    Color = 14251062
+    Font.Color = 16513785
+    Font.Height = -24
+    Font.Name = 'SFUIDisplay-Regular'
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 8
+    CorInicial = 14251062
+    CorMouseSob = 14251062
+  end
+  object RMKPanelWarna3: TRMKPanelWarna
+    Left = 872
+    Height = 51
+    Top = 208
+    Width = 288
+    BevelOuter = bvNone
+    Caption = 'Information'
+    Color = 49902
+    Font.Color = 16513785
+    Font.Height = -24
+    Font.Name = 'SFUIDisplay-Regular'
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 9
+    CorInicial = 49902
+    CorMouseSob = 49902
+  end
+  object RMKPanelWarna4: TRMKPanelWarna
+    Left = 872
+    Height = 51
+    Top = 136
+    Width = 288
+    BevelOuter = bvNone
+    Caption = 'Exit'
+    Color = 5725413
+    Font.Color = 16513785
+    Font.Height = -24
+    Font.Name = 'SFUIDisplay-Regular'
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 10
+    CorInicial = 5725413
+    CorMouseSob = 5725413
+  end
+  object RMKEdit1: TRMKEdit
+    Left = 984
+    Height = 29
+    Top = 16
+    Width = 180
+    Font.Height = -18
+    Font.Name = 'SFUIDisplay-Regular'
+    ParentFont = False
+    TabOrder = 11
+    Text = 'Rp 50.000'
+    MudarColor = 14087422
+    CampoObrigatorio = False
+  end
+  object RMKEdit2: TRMKEdit
+    Left = 872
+    Height = 37
+    Top = 88
+    Width = 280
+    Font.Height = -24
+    Font.Name = 'SFUIDisplay-Regular'
+    ParentFont = False
+    TabOrder = 12
+    Text = 'Rp 50.000'
+    MudarColor = 14087422
+    CampoObrigatorio = False
+  end
+  object Label1: TLabel
+    Left = 868
+    Height = 21
+    Top = 20
+    Width = 101
+    Caption = 'Jumlah Uang'
+    Font.Height = -18
+    Font.Name = 'SF UI Display'
+    ParentColor = False
+    ParentFont = False
+  end
+end
